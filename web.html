@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahim | Web Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio website of John Doe, a web developer specializing in modern web technologies.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <a href="#home" class="text-xl font-bold text-indigo-600">Fahimsyach Lokanta</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-indigo-600">Home</a>
+                    <a href="#about" class="nav-link hover:text-indigo-600">About</a>
+                    <a href="#projects" class="nav-link hover:text-indigo-600">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-indigo-600">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <a href="#home" class="block py-2 nav-link hover:text-indigo-600">Home</a>
+            <a href="#about" class="block py-2 nav-link hover:text-indigo-600">About</a>
+            <a href="#projects" class="block py-2 nav-link hover:text-indigo-600">Projects</a>
+            <a href="#contact" class="block py-2 nav-link hover:text-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="hero-title">Hi, I'm <span class="text-indigo-600">Fahim</span></h1>
+            <h2 class="hero-subtitle">Computer Science | HIMTI BINUS Activist</h2>
+            <p class="hero-description">Proactive and results-oriented Computer Science 4th semester student with leadership and event management experience.</p>
+            <a href="#projects" class="btn-primary">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-white">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="John Doe" 
+                         class="profile-img">
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="subsection-title">Who I Am</h3>
+                    <p class="text-content">
+                        A proactive and results-oriented Computer Science student with a strong interest in developing
+                        technological solutions. Possesses extensive experience in leadership and event management through
+                        active involvement in campus organizations such as HIMTI and KMB Dhammavaddhana.
+                    </p>
+                    <p class="text-content">
+                        When I'm not coding, you'll find me playing video games, singing, reading tech blogs, or learning new languanges. 
+                        I'm always eager to learn and take on new challenges in the ever-evolving world of web development.
+                    </p>
+                    
+                    <div class="skills-section">
+                        <h3 class="subsection-title">Skills</h3>
+                        <div class="skills-container">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tools-section">
+                        <h3 class="subsection-title">Tools & Technologies</h3>
+                        <div class="skills-container">
+                            <span class="tool-tag">Visual Studio Code</span>
+                            <span class="tool-tag">Git</span>
+                            <span class="tool-tag">GitHub</span>
+                            <span class="tool-tag">XAMPP</span>
+                            <span class="tool-tag">MySQL Workbench</span>
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Firebase</span>
+                            <span class="tool-tag">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-gray">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="/assets/QuizOn!.png" 
+                         alt="E-commerce Website" 
+                         class="project-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Interactive Quiz App</h3>
+                        <p class="card-description">A modular Flutter quiz app quiz gameplay, ready for further extension.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Flutter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vytora04/QuizOn" class="project-link">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="assets/Diagnosify.png" 
+                         alt="Task Management App" 
+                         class="project-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Disease Prediction Platform</h3>
+                        <p class="card-description">A modern web using machine learning models for multiple disease prediction.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vytora04/Diagnosify" class="project-link">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                            <a href="https://diagnosify-inky.vercel.app/" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="assets/LaporCerdas.png" 
+                         alt="Weather Dashboard" 
+                         class="project-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Report</h3>
+                        <p class="card-description">Public complaint application designed for easy submit complaints and feedback related to public services.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vytora04/LaporCerdas" class="project-link">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                            <a href="https://vytora04.github.io/LaporCerdas/" class="project-link">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-white">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="subsection-title">Contact Information</h3>
+                    <p class="text-content">
+                        Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope text-indigo-600 text-xl mr-4"></i>
+                            <span>lokantafahimsyach@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone text-indigo-600 text-xl mr-4"></i>
+                            <span>+62 895-336-966-801</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt text-indigo-600 text-xl mr-4"></i>
+                            <span>Tangerang, Indonesia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <!-- <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a> -->
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div>
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="form-input">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="form-input"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Fahimsyach Lokanta. All rights reserved.</p>
+            <p class="footer-subtitle">Built with love and technologies</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
