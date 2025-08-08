@@ -35,12 +35,23 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Contact form submission
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thanks for reaching out! I will get back to you soon.');
-    this.reset();
+// Update the contact form submission (remove the old preventDefault code)
+// Formspree will handle the form submission automatically
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form[action*="formspree"]');
+    if (form) {
+        form.addEventListener('submit', function() {
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Re-enable button after 3 seconds (Formspree will redirect or show success)
+            setTimeout(() => {
+                submitBtn.textContent = 'Send Message';
+                submitBtn.disabled = false;
+            }, 3000);
+        });
+    }
 });
 
-// Set current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
